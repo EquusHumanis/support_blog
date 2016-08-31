@@ -1,9 +1,9 @@
 <?php
 session_start();
 $db = mysqli_connect("localhost", "root", "troiswa", "blog");
-$error = "";
-$error404 = "";
-$page = "content";
+// $error = "";
+// $error404 = "";
+$page = "articles";
 
 $access = ["header", "content", "footer", "articles", "article", "comments", "register", "login"];
 $access_in = ["header", "content", "footer", "articles", "article", "comments", "comment", "register", "login", "create"];
