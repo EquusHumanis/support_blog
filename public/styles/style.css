@@ -1,4 +1,24 @@
 body {
 	font-family: 'Cabin', sans-serif;
-	color: #000;
+	background-color: #C1C1C1;
+}
+
+/*HEADER*/
+.page-header {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/*CONTAINER*/
+.container-fluid {
+/*	background-color: red;*/
+}
+
+/*MEDIA*/
+.media {
+	padding: 1%;
+	border: 1px solid #909090;
+	box-shadow: 3px 3px 16px -1px rgba(0,0,0,0.37),
+	-1px 2px 20px rgba(255, 255, 255, 0.37) inset; 
 }
