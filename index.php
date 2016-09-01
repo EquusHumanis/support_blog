@@ -6,8 +6,8 @@ $db = mysqli_connect("localhost", "root", "troiswa", "blog");
 $page = "articles";
 
 $access = ["content", "articles", "article", "register", "login"];
-$access_in = ["content", "articles", "article", "comments", "comment", "create"];
-if(isset($_SESSION["admin"]))
+$access_in = ["content", "articles", "article", "comments", "comment", "create", "logout"];
+if(isset($_SESSION["id"]))
 {
 	if(isset($_GET["page"]) && in_array($_GET["page"], $access_in))
 	{

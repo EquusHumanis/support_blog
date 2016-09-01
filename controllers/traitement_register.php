@@ -1,6 +1,6 @@
 <?php
 var_dump($_POST);
-if(isset($_POST["pseudo"]["email"]["password"]["password2"]))
+if(isset($_POST["pseudo"],$_POST["email"],$_POST["password"],$_POST["password2"]))
 {
 	$login = mysqli_real_escape_string($db, $_POST["pseudo"]);
 	$email = mysqli_real_escape_string($db, $_POST["email"]);
