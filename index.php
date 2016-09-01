@@ -5,8 +5,8 @@ $db = mysqli_connect("localhost", "root", "troiswa", "blog");
 // $error404 = "";
 $page = "articles";
 
-$access = ["header", "content", "footer", "articles", "article", "comments", "register", "login"];
-$access_in = ["header", "content", "footer", "articles", "article", "comments", "comment", "register", "login", "create"];
+$access = ["content", "articles", "article", "register", "login"];
+$access_in = ["content", "articles", "article", "comments", "comment", "create"];
 if(isset($_SESSION["admin"]))
 {
 	if(isset($_GET["page"]) && in_array($_GET["page"], $access_in))
@@ -22,7 +22,7 @@ else
 	}	
 }
 
-$traitementList = ["create_article", "create_comment", "delete_article", "delete_comment", "login", "logout", "modif_article","register"];
+$traitementList = ["create_article", "create_comment", "delete_article", "delete_comment", "login", "logout", "modif_article", "register"];
 if(in_array($page, $traitementList))
 {
 	require("controllers/traitement_".$page.".php");
