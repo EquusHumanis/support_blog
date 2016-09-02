@@ -1,6 +1,6 @@
 body {
 	font-family: 'Cabin', sans-serif;
-	background-color: #fff;
+/*	background: url('../images/pattern2.jpg') repeat;*/
 }
 
 a, a:hover {
@@ -17,6 +17,15 @@ a, a:hover {
 }
 
 /*HEADER*/
+.logo {
+	font-family: 'Monoton', cursive;
+	color: #fff;
+	font-size: 6rem;
+	margin-top: -10%;
+	letter-spacing: 15px;
+	text-align: center;
+}
+
 .page-header {
 	padding: 0;
 	margin: 0;
